@@ -6,10 +6,6 @@ export const ConfigProvider = ({ children, ...rest }) => (
   <ConfigContext.Provider value={{ ...rest }}>{children}</ConfigContext.Provider>
 );
 
-ConfigProvider.propTypes = {
-  children: React.Node.isRequired,
-};
-
 export function withConfig(Component) {
   return function ConnectedComponent(props) {
     return (

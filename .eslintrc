@@ -2,6 +2,7 @@
   "extends": "airbnb",
   "rules": {
       'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx']}],
-      'import/no-unresolved': ['error', { ignore: ['^react$'] }]
+      'import/no-unresolved': ['error', { ignore: ['^react$'] }],
+      'react/prop-types': 0
   }
 }
